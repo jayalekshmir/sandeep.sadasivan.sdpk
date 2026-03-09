@@ -64,33 +64,40 @@ const About = ({ isPage = false }) => {
             </p>
           )}
           {isPage && (
-            <div className="app_about app__flex">
-              <p className="p-text" style={{ marginTop: "1rem" }}>
-                To know more about me, please visit my{" "}
+            <>
+              <div className="app_about app__flex">
+                <p className="p-text" style={{ marginTop: "1rem" }}>
+                  To know more about me, please visit my LinkedIn profile.
+                </p>
+              </div>
+              <div className="app_about app__flex">
                 <a
                   href="https://www.linkedin.com/in/sandeep-sadasivan/"
                   target="_blank"
                   rel="noreferrer"
+                  className="app__flex head-text"
+                  style={{
+                    marginTop: "1rem",
+                    marginLeft: "1rem",
+                    fontSize: "2rem",
+                  }}
                 >
-                  LinkedIn
-                </a>{" "}
-                profile.
-              </p>
+                  <BsLinkedin style={{ color: "#0A66C2" }} />
+                </a>
 
-              <a
-                href="https://www.linkedin.com/in/sandeep-sadasivan/"
-                target="_blank"
-                rel="noreferrer"
-                className="app__flex head-text"
-                style={{
-                  marginTop: "1rem",
-                  marginLeft: "1rem",
-                  fontSize: "2rem",
-                }}
-              >
-                <BsLinkedin style={{ color: "#0A66C2" }} />
-              </a>
-            </div>
+                <p className="p-text" style={{ marginTop: "1rem" }}>
+                  {" "}
+                  <a
+                    href="https://www.linkedin.com/in/sandeep-sadasivan/"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ marginLeft: "8px" }}
+                  >
+                    linkedin.com/in/sandeep-sadasivan
+                  </a>{" "}
+                </p>
+              </div>
+            </>
           )}
         </div>
       </div>
