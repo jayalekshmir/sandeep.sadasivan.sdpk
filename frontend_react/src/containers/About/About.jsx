@@ -58,11 +58,7 @@ const About = ({ isPage = false }) => {
             className="p-text"
             dangerouslySetInnerHTML={{ __html: aboutMe.description }}
           ></p>
-          {!isPage && (
-            <p className="p-text" style={{ marginTop: "1rem" }}>
-              Read more about me in <NavLink to="/about">here</NavLink>.
-            </p>
-          )}
+
           {isPage && (
             <>
               <div className="app_about app__flex">
@@ -70,7 +66,10 @@ const About = ({ isPage = false }) => {
                   To know more about me, please visit my LinkedIn profile.
                 </p>
               </div>
-              <div className="app_about app__flex">
+              <div
+                className="app_about app__flex"
+                style={{ marginBottom: "2rem" }}
+              >
                 <a
                   href="https://www.linkedin.com/in/sandeep-sadasivan/"
                   target="_blank"
@@ -78,7 +77,6 @@ const About = ({ isPage = false }) => {
                   className="app__flex head-text"
                   style={{
                     marginTop: "1rem",
-                    marginLeft: "1rem",
                     fontSize: "2rem",
                   }}
                 >
@@ -98,6 +96,46 @@ const About = ({ isPage = false }) => {
                 </p>
               </div>
             </>
+          )}
+
+          <h2 className="head-text">Career Aspirations</h2>
+          <p
+            className="p-text"
+            dangerouslySetInnerHTML={{ __html: aboutMe.careerAspiration }}
+          ></p>
+
+          {aboutMe.selfEvaluation && (
+            <motion.div
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 1, delay: 0.2 }}
+            >
+              <h2
+                className="head-text"
+                style={{ textAlign: "left", marginTop: "2rem" }}
+              >
+                Self Evaluation
+              </h2>
+              <ul className="p-text">
+                {aboutMe.selfEvaluation.strengths.map((strength) => (
+                  <li key={strength}>
+                    <p className="p-text">{strength}</p>
+                  </li>
+                ))}
+              </ul>
+              <h2
+                className="head-text"
+                style={{ textAlign: "left", marginTop: "2rem" }}
+              >
+                Areas of Development
+              </h2>
+              <ul className="p-text">
+                {aboutMe.selfEvaluation.areasOfDevelopment.map((area) => (
+                  <li key={area}>
+                    <p className="p-text">{area}</p>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           )}
         </div>
       </div>
