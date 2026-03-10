@@ -16,7 +16,7 @@ const ResearchProjects = ({ isPage = false }) => {
           paddingTop: "6rem",
         }}
       >
-        Research & <span>Projects</span>
+        <span>Projects</span>
       </h2>
 
       <div className="app__research-container">

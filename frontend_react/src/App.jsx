@@ -30,7 +30,7 @@ const App = () => {
             path="/reflective-learning"
             element={<ReflectiveLearningPage />}
           />
-          <Route path="/research-projects" element={<ResearchProjectsPage />} />
+          <Route path="/projects" element={<ResearchProjectsPage />} />
           <Route
             path="/professional-development"
             element={<ProfessionalDevelopmentPage />}

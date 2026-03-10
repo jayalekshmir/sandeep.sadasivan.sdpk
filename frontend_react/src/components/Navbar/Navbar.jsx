@@ -36,7 +36,7 @@ const Navbar = () => {
     // { label: "experiences", path: "/experiences" },
     // { label: "testimonials", path: "/testimonials" },
     { label: "reflective learning", path: "/reflective-learning" },
-    { label: "research / projects", path: "/research-projects" },
+    { label: "projects", path: "/projects" },
     { label: "professional development", path: "/professional-development" },
   ];
 
