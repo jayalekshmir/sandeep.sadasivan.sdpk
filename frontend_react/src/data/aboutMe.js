@@ -16,9 +16,9 @@ const aboutMe = {
     ],
   },
   careerAspiration:
-    "To leverage my experience in client management and business development to drive growth and success for a forward-thinking organization.",
+    "My long-term career aspiration is to become a Business Development Leader or Commercial Manager in a global organisation. I aim to leverage my experience in enterprise sales, key account management, and client relationship development to drive sustainable revenue growth and market expansion. Through the Master of Management program at ICL, I am developing advanced skills in business professionalism, leadership, strategic decision-making, and cross-cultural communication. These competencies will help me succeed in dynamic global markets and contribute to organisational success.",
   description:
-    "Hi! I am an ambitious individual with competent experience of working with clients from different sectors. Have  maximised sales by managing all accounts systematically and logically. Fiercely competitive approach to acquire business, and able to handle complex situations from a strategic and tactical perspective.",
+    "My name is Sandeep Sadasivan, and I am a sales and business development professional with more than ten years of experience in enterprise sales, account management, and strategic business growth. I have worked with leading organisations in logistics, Manufacturing, hospitality, and FMCD sectors in India, managing large corporate accounts and building long-term client partnerships.Currently, I am pursuing a Master of Management at ICL Graduate Business School in Auckland, New Zealand. This program is helping me strengthen my leadership, strategic thinking, and global business management capabilities while preparing me for leadership roles in international business environments.",
 };
 
 export default aboutMe;

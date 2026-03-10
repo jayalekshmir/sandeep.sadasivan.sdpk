@@ -34,9 +34,9 @@ const About = ({ isPage = false }) => {
           paddingTop: isPage ? "6rem" : "0",
         }}
       >
-        I know that <span>Good Design</span>
+        Professional passionate about building <span>strategic partnerships</span>
         <br />
-        means <span>Good Business</span>
+        and delivering sustainable <span>business growth</span>
       </h2>
 
       <div className="app__about-context app__flex">
